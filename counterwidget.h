@@ -19,8 +19,13 @@ public slots:
 
 private:
      int m_count;
+     int m_number;
+     void updateDisplay();
+
      QTimer m_timer;
      Gpio m_gpio;
+     QLCDNumber* m_lcd = nullptr;
+
 
 };
 
